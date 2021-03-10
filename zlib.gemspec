@@ -12,7 +12,7 @@ source_version = ["", "ext/zlib/"].find do |dir|
 end
 
 Gem::Specification.new do |spec|
-  spec.name          = "zlib"
+  spec.name          = "zlib-basecamp-patch"
   spec.version       = source_version
   spec.authors       = ["Yukihiro Matsumoto", "UENO Katsuhiro"]
   spec.email         = ["matz@ruby-lang.org", nil]
@@ -22,7 +22,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = "https://github.com/ruby/zlib"
   spec.licenses       = ["Ruby", "BSD-2-Clause"]
 
-  spec.files         = [".gitignore", ".travis.yml", "Gemfile", "LICENSE.txt", "README.md", "Rakefile", "bin/console", "bin/setup", "ext/zlib/extconf.rb", "ext/zlib/zlib.c", "zlib.gemspec"]
+  spec.files         = [".gitignore", "Gemfile", "LICENSE.txt", "README.md", "Rakefile", "bin/console", "bin/setup", "ext/zlib/extconf.rb", "ext/zlib/zlib.c", "zlib.gemspec"]
   spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
